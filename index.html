@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <title>Scenic Flights</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="index.js">
+    </script>
+</head>
+<header>
+    <h1 class ="top"> Scenic Flights <img src="/Plane1.jpg" alt="plane"> </h1>
+</header> 
+
+
+<body>
+    <form method="get" action="www.gmail.com" target="_blank" name="myform" >
+
+     <div class="grid">
+
+        <div class="OneButton"> <input type="radio"  name="tripType" value="OneW" id ="IDO" required/>*One Way</div> 
+        <div class="ReturnButton"><input type="radio"  name="tripType"  value="ReturnW" id="IDR" />Return</div> 
+        
+        <div class="From">
+            From
+            <br /><br />
+            <select name="FromT" id="IDfrom">	
+             <option>Sydney</option>
+             <option>Brisbane</option>
+             <option>Melbounre</option>
+             <option>Canberra</option>
+             <option>Hobart</option>
+             <option>Perth</option>
+             <option>Adelaide</option>
+             
+            </select> <br /><br />
+
+        </div> 
+        <div class="To"> 
+            To
+            <br /><br />
+            <select name="ToT" id="IDto">	
+             <option>Maroochydore</option>
+             <option>Armidale</option>
+             <option>Broken Hill</option>
+             <option>Byron Bay</option>
+             <option>Eden</option>
+             <option>Tin Can Bay</option>
+             <option>Gympie</option>
+            </select>  <br /><br />
+        </div>
+
+        <div class="Start">*Start Date 
+            <br /><br />
+            <input type="date" name="Sdate" id="IDStart" required/><br /><br />
+        </div>
+
+
+        <div class="Return">Return date 
+            <br /><br />
+            <input type="date" name="Rdate" id="IDreturn"/><br /><br />
+        </div>
+
+
+        <div class="P1Fname"> Passenger 1 (contact person) <br> </br> Name <br> </br> <input type="text" name="P1Fname" id="IDP1Fname"/> </div>
+        
+        <div class="Age"> <br> </br> Age <br> </br> <input type="number" name="age" id="IDP1age" /> </div>
+
+        <div class="GenderM"> <br> </br> <br> </br><input type="radio"  name="Gender1"  value="M" id="ID1genderM"/>Male</div> 
+        <div class="GenderF"> <br> </br> <br> </br><input type="radio"  name="Gender1"  value="F" id="ID1genderF"/>Female</div>    
+
+        <div class="email"> *Email <br> </br> <input type="email" name="email" id="email" required/> </div>
+        <div class="mobile"> *Mobile Number <br> </br> <input type="number" name="mobnumber" id="mob" required/> </div>
+        
+        <div class="address"> Address <br> </br> <input type="text" name="address" id="address"/> </div>
+        <div class="post"> Postcode <br> </br> <input type="number" name="postcode" id="post"/> </div>
+
+        <div class="P2Fname"> Passenger 2 <br> </br> Name <br> </br> <input type="text" name="P2Fname" id="P2Fname"/> </div>
+       
+        <div class="P2Age"> <br> </br> Age <br> </br><input type="number"  name="P2age" id="P2age"/> </div>
+
+        <div class="P2GenderM">  <br> </br> <br> </br><input type="radio"  name="Gender3" value="M2" id="Gender3M"/>Male</div> 
+        <div class="P2GenderF"><br> </br> <br> </br><input type="radio"  name="Gender3"  value="F2" id="Gender3F"/>Female</div>  
+
+
+       <button class="Submit" id ="flightch" onclick= "validate()"> Check Information</button>
+       <button class="submitIn" type="submit"> Submit </button> 
+        <p class="feedback" id ="feedback"> </p>
+        </div> 
+    </form>
+
+    
+</body>
+</html>
